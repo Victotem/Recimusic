@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  		<link rel="stylesheet" href="/static/css/styles-login-registro.css">
+		<title>Registro</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Registro</h1>
+			<form action="{{ url_for('register') }}" method="POST" novalidate>
+				{{ rform.csrf_token }}
+				<p>{{ rform.email.label }}<br> {{ rform.email(size=30) }} 
+				{% for error in rform.email.errors %}
+				<span style="color:red">{{ error }}</span>
+				{% endfor %}
+				</p>
+				<p>{{ rform.password.label }}<br> {{ rform.password(size=30) }}
+				{% for error in rform.password.errors %}
+				<span style="color:red">{{ error }}</span>
+				{% endfor %}
+				</p>
+				
+				{{ rform.submit }}
+			</form>
+
+		</div>
+	</body>
+</html>

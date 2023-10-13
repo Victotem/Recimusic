@@ -1,0 +1,192 @@
+/*PAGINA PRINCIPAL*/
+body {
+    font-family: "Montserrat";
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat-Bold";
+  }
+  
+  p {
+    color: #8f8f8f;
+    
+  }
+  /*Encabezado*/
+
+  .big-heading {
+    font-family: "Montserrat-Black";
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+  
+  .section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  /*Contenedores*/
+  
+.container-fluid{
+    padding: 7% 15%;
+  }
+/*Carrusel y letras */
+
+.colored-section {
+    background-color: #FFA559;
+    color: #fff;
+  }
+  
+.white-section {
+    background-color: #fff;
+  }
+  /* Barra de navegacion */
+.nav-link-white {
+    color: #ffffff;
+}
+
+.navbar {
+padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+font-family: "Ubuntu";
+font-size: 2.5rem;
+font-weight: bold;
+}
+
+.nav-item {
+padding: 0 18px;
+}
+
+.nav-link {
+font-size: 1.2rem;
+font-family: "Montserrat-Light";
+}
+
+/*Botones*/
+
+.download-button {
+    margin: 15% 15% 5% 40;
+  }
+
+/* Parte del titulo */
+
+#titulo {
+    background-color: #FF6000;
+    color: #fff;
+    text-align: left;
+  }
+  
+  #titulo .container-fluid {
+    padding: 3% 15% 7%;
+  }
+
+ /* Imagen en el titulo */
+  
+ .title-image {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+  }
+
+  /*Parte de ventajas */
+
+  #ventajas {
+    position: relative;
+  }
+  
+.feature-title {
+    font-size: 1.5rem;
+  }
+  
+  .feature-box {
+    padding: 4.5%;
+  }
+  
+  .icon {
+    color: #FFA559;;
+    margin-bottom: 1rem;
+  }
+  
+  .icon:hover {
+    color: #FFA559;;
+  }
+  /* Subscripciones */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .success-message {
+    color: green;
+    text-align: center;
+    display: none;
+  }
+ 
+
+  /* Parte de testimonios */
+
+  #testimonios {
+    background-color:#FFA559;
+  }
+  
+  .testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  .testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+  }
+  
+  
+  #imagenes {
+    background-color:   #FFA559;
+    padding-bottom: 3%;
+  }
+  
+  .press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+  }
+
+  /* Pricing Section */
+
+#precio {
+    padding: 100px;
+  }
+  
+  .price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  .pricing-column {
+    padding: 3% 2%;
+  }
+
+  /*Parte del footer */
+ #footer{
+    background-color:#FFE6C7;
+ } 
+ #acc{
+    background-color:#FFE6C7;
+ }
+  
+  /*Diseño responsive para la imagen el titulo*/
+@media (max-width: 1028px) {
+
+    #titulo {
+      text-align: center;
+    }
+  
+    .title-image {
+      position: static;
+      transform: rotate(0);
+    }
+  }
+
+  /*PAGINA DE REGISTRO*/
